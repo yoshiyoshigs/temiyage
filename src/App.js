@@ -14,6 +14,7 @@ import ToggleButtons3 from "./Mitame2";
 import ToggleButtons4 from "./Yosan2";
 import MediaCard1 from "./Syousai";
 import SimpleCard1 from "./Kounyu";
+import MediaCard2 from "./Kekkaichirann";
 // import Feed from "./Feed";
 // import Post from "./Post";
 import  "./style.css";
@@ -71,8 +72,10 @@ const App = () => {
       <ToggleButtons2/>
       <ToggleButtons3/>
       <ToggleButtons4/>
+      <MediaCard2/>
       <MediaCard1/>
       <SimpleCard1/>
+     
       
 
       
