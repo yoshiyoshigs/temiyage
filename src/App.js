@@ -1,6 +1,8 @@
 // import { FormControl, TextField } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { db } from "./firebase";
+// import ReactDOM from "react-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import AppleIcon from '@material-ui/icons/Apple';
 // import TaskItem from "./TaskItem";
 // import ButtonSizes2 from "./Seibetsu";
@@ -11,9 +13,11 @@ import ToggleButtons2 from "./Seibetsu2";
 import ToggleButtons3 from "./Mitame2";
 import ToggleButtons4 from "./Yosan2";
 import MediaCard1 from "./Syousai";
+import SimpleCard1 from "./Kounyu";
 // import Feed from "./Feed";
 // import Post from "./Post";
 import  "./style.css";
+import axios from 'axios';
 
 const App = () => {
   // 1.記述
@@ -48,6 +52,13 @@ const App = () => {
     return () => firebaseData();
   },[]);
 
+
+
+// axios.get(`http://brownbear68.sakura.ne.jp/items`)
+//       .then(res => {
+//         console.log(res.data)
+//       })
+
   
   return (
     <div>
@@ -61,6 +72,8 @@ const App = () => {
       <ToggleButtons3/>
       <ToggleButtons4/>
       <MediaCard1/>
+      <SimpleCard1/>
+      
 
       
     </div>
