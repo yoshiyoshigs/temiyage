@@ -22,11 +22,9 @@ export default function ToggleButtons2() {
       onChange={handleAlignment}
       aria-label="text alignment">
       <ToggleButton value="left" aria-label="left aligned">
-        {/* <FormatAlignLeftIcon /> */}
         男性
       </ToggleButton>
       <ToggleButton value="right" aria-label="right aligned">
-        {/* <FormatAlignRightIcon /> */}
         女性
       </ToggleButton>
     </ToggleButtonGroup>

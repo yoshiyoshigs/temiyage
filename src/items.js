@@ -8,16 +8,8 @@ import {
     useHistory,
 } from 'react-router-dom';
 
-// const useStyles = makeStyles({
-//     image: {
-//         width: "100px",
-//         height: "100px"
-//     }
-//   });
-
 const Items = () => {
     const history = useHistory();
-    // const classes = useStyles();
     const [data, setData] = useState([{ id: "", title: "", contents: "" }]);
 
     const fetchGetData = async () => {
