@@ -1,0 +1,43 @@
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemWrapper:hover {
+  background-color: rgba(0, 16, 14, 0.08);
+  transition: background-color 0.5s;
+}
+
+.itemWrapper {
+  margin: 10px;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.mapImage {
+  width: 100%;
+}
+
+.topButtonWrapper {
+  margin: 10px 0;
+}
+
+.mapImageWrapper {
+  margin-bottom: 10px;
+}
+
+.itemName {
+  font-weight: bold;
+  color: #475a57;
+  padding-bottom: 5px;
+}
+
+.itemDescription {
+  color: #354341;
+  font-size: 13px;
+}

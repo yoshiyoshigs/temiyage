@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imageWrapper {
+    width: 100%;
+  }
+  
+  .image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .buttonWrapper {
+    width: 100%;
+    color: #354341;
+    font-size: 13px;
+  }

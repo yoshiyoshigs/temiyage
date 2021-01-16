@@ -5,13 +5,26 @@ import FormatAlignRightIcon from '@material-ui/icons/FormatAlignRight';
 import FormatAlignJustifyIcon from '@material-ui/icons/FormatAlignJustify';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+import Button from '@material-ui/core/Button';
+import {
+  useHistory,
+} from 'react-router-dom';
 
 export default function ToggleButtons4() {
   const [alignment, setAlignment] = React.useState('left');
+  const history = useHistory();
 
   const handleAlignment = (event, newAlignment) => {
     setAlignment(newAlignment);
+
+    
   };
+
+  const moveItems = () => {
+    history.push("/items")
+  };
+
+
 
   return (
     <div style={{textAlign: 'center'}}>
@@ -34,6 +47,10 @@ export default function ToggleButtons4() {
         5,000円〜
       </ToggleButton>
     </ToggleButtonGroup>
+    {/* <br /><Button id="firstbutton" size="small">検索</Button> */}
+    <br />
+    <br />
+    <button onClick={moveItems}>検索</button>
     </div>
   );
 }

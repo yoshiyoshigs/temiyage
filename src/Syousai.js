@@ -24,6 +24,17 @@ const useStyles = makeStyles({
 export default function MediaCard1() {
   const classes = useStyles();
 
+  class Syousai extends React.Component {
+    render(){
+      return(
+        <div>
+          <h1>About</h1>
+          <h2>I am {this.props.name}</h2>
+        </div>
+      )
+    }
+  }
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -53,3 +64,5 @@ export default function MediaCard1() {
     
   );
 }
+
+export default Syousai;

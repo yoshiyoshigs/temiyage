@@ -3,3 +3,14 @@
     text-align:center;
     color: white;
 }
+
+#img-container{
+    display:flex;/* flexbox */
+    justify-content:center; /* 水平方向 */
+    align-items: center; /* 垂直方向 */
+  }
+
+#first {
+    width: 400;
+    height: 200;
+}

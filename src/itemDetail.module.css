@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nameWrapper {
+  width: 100%;
+  color: #475a57;
+  padding-bottom: 10px;
+}
+
+.descriptionWrapper {
+  width: 100%;
+  color: #354341;
+  font-size: 13px;
+}
+
+.priceWrapper {
+  width: 100%;
+  color: #354341;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.buttonWrapper {
+  width: 100%;
+  color: #354341;
+  font-size: 13px;
+}
