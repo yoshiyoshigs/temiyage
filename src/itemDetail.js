@@ -43,6 +43,9 @@ const ItemDetail = () => {
                     <div className={classes.priceWrapper}>
                         <div>価格: {item.price}円</div>
                     </div>
+                    <div className={classes.priceWrapper}>
+                        <div>{item.store_name}</div>
+                    </div>
                     <div className={classes.buttonWrapper}>
                         <Button variant="contained" color="secondary" onClick={moveCompleteBuy}>購入する</Button> 
                     </div>  
