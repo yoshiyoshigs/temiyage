@@ -1,5 +1,4 @@
 import React from "react";
-
 import Items from "./items"
 import Top from "./top"
 import ItemDetail from "./itemDetail"

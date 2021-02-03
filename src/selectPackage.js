@@ -26,7 +26,7 @@ export default function ToggleButtons1() {
             高級感
           </ToggleButton>
           <ToggleButton value="justify">
-            わびさび
+            外国人向き
           </ToggleButton>
         </ToggleButtonGroup>
       </Grid>
