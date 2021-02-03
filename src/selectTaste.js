@@ -1,10 +1,8 @@
 import React from 'react';
-import FormatAlignLeftIcon from '@material-ui/icons/FormatAlignLeft';
-import FormatAlignCenterIcon from '@material-ui/icons/FormatAlignCenter';
-import FormatAlignRightIcon from '@material-ui/icons/FormatAlignRight';
-import FormatAlignJustifyIcon from '@material-ui/icons/FormatAlignJustify';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+import { makeStyles } from '@material-ui/core/styles';
+import  "./style.css";
 
 export default function ToggleButtons2() {
   const [alignment, setAlignment] = React.useState('left');
@@ -12,6 +10,15 @@ export default function ToggleButtons2() {
   const handleAlignment = (event, newAlignment) => {
     setAlignment(newAlignment);
   };
+
+  const useStyles = makeStyles({
+    myButton: {
+      color: '#000000',
+      '&:hover': {backgroundColor: '#ffecd2',},
+      '&.MuiToggleButton-root.Mui-selected':{ backgroundColor: '#f6d365'}
+    },
+});
+  const classes = useStyles();
 
   return (
     <div style={{textAlign: 'center'}}>
@@ -21,10 +28,10 @@ export default function ToggleButtons2() {
       exclusive
       onChange={handleAlignment}
       aria-label="text alignment">
-      <ToggleButton value="left" aria-label="left aligned">
+      <ToggleButton className={classes.myButton} value="left" aria-label="left aligned">
         甘い
       </ToggleButton>
-      <ToggleButton value="right" aria-label="right aligned">
+      <ToggleButton className={classes.myButton} value="right" aria-label="right aligned">
         甘くない
       </ToggleButton>
     </ToggleButtonGroup>
