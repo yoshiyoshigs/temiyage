@@ -41,6 +41,12 @@ const ItemDetail = () => {
                         <div>{item.item_desc}</div>
                     </div>
                     <div className={classes.priceWrapper}>
+                        <div>アレルギー：{item.allergies}</div>
+                    </div>
+                    <div className={classes.priceWrapper}>
+                        <div>賞味期限：{item.expiry}</div>
+                    </div>
+                    <div className={classes.priceWrapper}>
                         <div>価格: {item.price}円</div>
                     </div>
                     <div className={classes.priceWrapper}>

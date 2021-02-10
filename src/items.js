@@ -61,6 +61,8 @@ const Items = () => {
                                     <Grid item xs={12} sm={8}>
                                         <div className={classes.itemName}>{souvenir.item_name}</div>
                                         <div className={classes.itemDescription}>{souvenir.item_desc}</div>
+                                        <br/>
+                                        <div className={classes.itemDescription}>価格：{souvenir.price}円</div>
                                     </Grid>
                             </Grid>
                         </div>

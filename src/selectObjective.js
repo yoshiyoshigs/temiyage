@@ -28,16 +28,19 @@ export default function ToggleButtons1() {
       <Grid item>
         <ToggleButtonGroup  size="large" value={alignment} exclusive onChange={handleChange}>
           <ToggleButton className={classes.myButton} value="left">
+            ご挨拶
+          </ToggleButton>
+          <ToggleButton className={classes.myButton} value="center">
             お祝い
           </ToggleButton>
           <ToggleButton className={classes.myButton} value="center">
-            接待
+            パーティ
           </ToggleButton>
           <ToggleButton className={classes.myButton} value="right">
-            謝罪
+            お見舞い
           </ToggleButton>
           <ToggleButton className={classes.myButton} value="justify">
-            挨拶
+            お詫び
           </ToggleButton>
         </ToggleButtonGroup>
       </Grid>

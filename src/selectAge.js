@@ -22,20 +22,20 @@ export default function ToggleButtons2() {
 
   return (
     <div style={{textAlign: 'center'}}>
-    <h1>貰い手</h1>
+    <h1>年齢</h1>
     <ToggleButtonGroup
       value={alignment}
       exclusive
       onChange={handleAlignment}
       aria-label="text alignment">
       <ToggleButton className={classes.myButton} value="left" aria-label="left aligned">
-        男性
+        〜20代
       </ToggleButton>
       <ToggleButton className={classes.myButton} value="center">
-        女性      
+        30代    
       </ToggleButton>
       <ToggleButton className={classes.myButton} value="right" aria-label="right aligned">
-        両方
+        40代〜
       </ToggleButton>
     </ToggleButtonGroup>
     </div>
